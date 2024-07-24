@@ -1,5 +1,10 @@
 name: Publish Docker Image
-on: [push]
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - "v*"
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
@@ -116,7 +121,7 @@ jobs:
 
   manifests:
     name: Build manifests
-    needs: [docker_build]
+    needs: [ docker_build ]
     runs-on: ubuntu-latest
     steps:
       - name: Get lowercase string for the repository name
