@@ -18,6 +18,7 @@
 ## Project Overview
 
 RWKV-Runner is a comprehensive desktop application framework that provides an all-in-one solution for running RWKV (Recurrent Weighted Key-Value Transformer) language models. The project automates the entire process of model setup, inference, and management while providing an OpenAI-compatible API interface.
+<https://github.com/josStorer/RWKV-Runner>
 
 ### Key Features
 
